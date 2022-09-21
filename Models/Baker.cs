@@ -7,5 +7,15 @@ namespace DotnetBakery.Models
 {
     public class Baker 
     {
+        //properties -> columns
+        // EF knows this is a primary key and serial
+        public int id {get; set;}
+        
+        [Required] //Attribute that is required for the db like NOT NULL in SQL
+        public string name {get; set;}
+
+        // ApplicationContext file is like pool, we need to tell it our models exist.
+
+
     }
 }
